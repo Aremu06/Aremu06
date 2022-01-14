@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<suites name="Suite" parallel="false">
+    <listeners>
+            <listeners class-name="com.qa.listeners.TestListener"/>
+        </listeners>
+    <test name="Test">
+        <parameter name="emulator" value="true"/>
+        <parameter name="platformName" value="Android"/>
+        <parameter name="platformVersion" value="11"/>
+        <parameter name="deviceName" value="Pixel 3"/>
+        <parameter name="udid" value="emulator-5554"/>
+        <classes>
+            <classes name="com.qa.tests.LoginTests"/>
+<!--              <methods>
+            <include name = invalidUerName/>
+            </methods> -->
+        </classes>
+    </test> <!-- Test -->
+   </suites> <!-- Suite -->
